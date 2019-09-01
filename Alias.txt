@@ -1,0 +1,134 @@
+;*** Clearance ***
+..PDC This is your predepature clearance (PDC) simulating ACARS datalink: CLD $1z $dep PDC 001/$aircraft CLRD TO $arr OFF $deprwy VIA $sid/SQUAWK $squawk ADT MDI/confirm clearance and report ready for startup on $com.
+..CLR Cleared to $arr as filed, $sid dep, rwy $deprwy, climb $alt, SQ $squawk.
+..CLRC Readback correct, advise ready for pushback and startup.
+..FPC Your FP closed $time, thank you for flying to $arr, see you soon Captain.
+..CLRLATER Clearance during taxi, advise for start-up.
+
+;*** Startup ***
+..PUSH1 Local QNH $altim($dep), startup and pushback approved facing $1, report ready for taxi.
+..PUSH Local QNH $altim($dep), Startup and Pushback approved, report ready for taxi.
+
+;*** Takeoff ***
+..RD Advise ready for departure.
+..TO Wind $winds, rwy $deprwy, cleared for takeoff.
+..RDC Radar Contact $calt.
+..RC Radar contact, $calt , continue as filed.
+..RWHEAD Continue RWY heading, climb to $1
+
+;*** Taxi ***
+..TAXIHP Taxi holding point $1, rwy $deprwy via $2, report ready for departure, QNH $altim($dep)..
+..TAXICR Taxi holding point $1 rwy $deprwy via $2, cross rwy $3, report ready for departure, QNH $altim($dep)..
+..LW Line up and wait rwy $deprwy.
+..TAXIVA Taxi via $1 to the apron, QNH $altim($dep).
+..TAXIVS Taxi via $1 to stand $2,QNH $altim($dep).
+..TAXIVG Taxi via $1 to gate $2, QNH $altim($dep).
+..TAXIA Taxi to the apron.
+..TAXIS Taxi to stand of choice.
+..TAXIG Taxi via to gate of choice.
+
+;*** Handoff ***
+..HANDOFF Contact $radioname($1) on freq $freq($1), have a nice flight, bye bye.
+..UNI No further ATC to Hand you Over. Radar service terminated, resume own navigation, switch to Unicom 122.800, Bye bye.
+
+;*** Approach ***
+..ILS Cleared ILS approach, rwy $arrrwy, report established.
+..LOC Cleared for the localiser, rwy $arrrwy, report established.
+..VOR Cleared VOR/DME approach, rwy $arrrwy, report rwy in sight.
+..VIS Cleared visual approach, rwy $arrrwy, report on final.
+
+;*** Landing ***
+..LAND Wind $winds, rwy $arrrwy, cleared to land
+..LAND1 Wind $winds, rwy $arrrwy, cleared to land, report rwy vacated.
+..VAC Report rwy $arrrwy vacated.
+
+;*** Pilot Info ***
+..checkfp .msg $aircraft Hello. Your IFR flight plan is not valid. Please check for a valid route. Thank you!
+.po .msg $aircraft Hello, the position you are standing is already occupied by another aircraft. Please choose another one, thank you!
+.fp .msg $aircraft Hello. Your IFR flight plan is not valid. Please check for a valid route. Thank you!
+
+;*** Various ***
+..SQ Set SQ $squawk
+..SQSB Set SQ mode S/B.
+..SQC Set SQ mode C.
+..VOICE Do you copy on Voice?
+..AI $metar($arr)
+..DI $metar($dep)
+..OFF To all stations, $radioname is now closing. Switch to UNICOM 122.800. Bye everyone!
+..OFF5 To all stations, $radioname is closing in 5 minutes!
+..ID Identified $calt.
+..WELCOME Welcome to $arr. Taxi to stand of Choice
+..LIGO To All stations!  Off station for 2 minutes!
+..PISO aaaand i am back!
+
+;*** Vectors ***
+..LEFT Turn Left Hdg $1.
+..RIGHT Turn Right Hdg $1.
+..DESC Descend $1 , QNH $altim($arr).
+..CLIMB Climb FL $1.
+..STAR Cleared $star arrival, $1 approach rwy $arrrwy, descend according the procedure, local QNH $altim($arr).
+..EXSTAR Expect $star arrival, $1 approach rwy $arrrwy, report ready for descend.
+
+;*** Wait ***
+..WC .wait CLRC
+..WS .wait STUP
+..WP .wait P&ST
+..WT .wait TAXI
+..WD .wait DEPA
+
+;*** QuickVis ***
+..FIX-LGGG1 .FF BELIX LORNO RUTOM DINOB LATAN NOSTO TIGRA OLGAT EPIRU PITAS NIKRO VJOSA TUMBO DIMIS PINDO BITLA BEKVA TALAS ERANA MAKED DISOR RUGAS EVIVI NIKTI RODIP
+..FIX-LGGG2 .FF GOLDO BELGI AMANI RIKSO VEXOL SITRU REDRA BANRO PIROX SOTIV BENEM EVENO ALKIS MAGIS ABILO KAVOS KUMBI ANTAR PAXIS TANSA METRU SALUN ARLOS NEVIK DEMAG
+..FIX-LGAV .FF ASTOV NEMES RILIN RIMAX PIKAD GERMI XORKI ABLON DILOP OMIRO TUREN NEVRA KEPIR OLIDA VARIX SOREV BADEL PELAG VELOP
+..FIX-LGTS .FF LOPOS EDASI ALIKO ODIKO DIKNI ARNAS PEREN OSMOS LEKPO BEKVA TALAS ERANA MAKED DISOR RUGAS EVIVI NIKTI
+..FIX-LGIR .FF TIPUS OTREX BAVES EPALO NAVUS XAVIS LABUX AMAXI VEGES DELAV MOKIS GONSO NIBOX LAPSO DIRMI ALIKI
+..FIX-LGKR .FF OLGAT TIGRA NOSTO LATAN IDIMI RIPID MALED PARNA NIKRO PITAS EPIRU BETAK DIREX
+..FIX-LGRP .FF ASIMI BANRO BENEM IRBAX LAKAD LOKNA NAVOK NILAS ORVIS PIROX ROXOL SOTIV VANES
+..VOR-LGGG .FV KRK YNN TSL ALX LMO SKP ARA TRL ATV KEA MIL PLH SIT RDS MES
+..VOR-LGAV .FV ATV KEA DDM KRO MKN MIL
+..VOR-LGTS .FV TSL MKR SKP KAS KPL FSK
+..VOR-LGIR .FV IRA SIT PLH SUD
+..VOR-LGKR .FV GAR KRK YNN
+..VOR-LGRP .FV PAR RDS KOS
+..NDB-LGGG .FN KOR
+..NDB-LGAV .FN KOR EGN
+..NDB-LGTS .FN THS
+..NDB-LGIR .FN HER
+..APT-LGGG .FA LGAV LGTT LGKN LGEL LGMG LGHI LGMT LGLM LGAL LGKV LGTS LGKZ LGKA LGLR LGBL LGSK LGSY LGTG LGIO LGKR LGPZ LGAD LGRX LGKF LGTP LGKF LGKL LGKC LGML LGIR LGSA LGTL LGZA LGMK LGPA LGNX LGSR LGST LGKP LGRP LGKO LGPL LGLE LGSM LGIK LGKJ LGKS LGSO
+..APT-LGAV .FA LGAV LGMG LGEL LGTT LGKN LGSO
+..APT-LGTS .FA LGTS LGSD LGAX
+..APT-LGIR .FA LGIR LGTL LGST LGSA LGKS LGKP
+..APT-LGKR .FA LGKR
+..APT-LGRP .FA LGRP LGRD
+..VFR-LGAV1 .FF AFLEV APATR AYDRA AGEOR ATHOM AIGINA ASTROS AVLAKI DAPORI DAVRO EAIGI HELLINIKON HOLARGOS KASTELLA KAVOURI KORINTHOS LOFOS MAKROS MANDILOU MEGARA MEROUTHI
+..VFR-LGAV2 .FF NAFPLIO NANDR AKEA NSYRO PERATI POROS SSYRO SPETSAI STAVROS YDRA YIAROS SKITH
+..VFR-LGTS .FF KITROS DELTA AGELO GOLF FALIA PIKRO KORA APOLO KATERO LAGADA PANORA VASILI GALA PLAYIA POSIDI LAMBI
+..VFR-LGIR .FF AMALI AVGO DIA GRISL HOSPITAL IERAPETRA KASTELI PAXIMADI PSISL SKALANI AAGIO AMYRO TIMBAKI
+..VFR-LGKO .FF KANDELUSA KEFALOS KOPAR NERA NISYROS PERGUSA POTHIA TELENDOS
+..VFR-LGKR .FF ANTENA AVLAKI.KR CASTRO GARDI IGOU KAVOS OTHONI PALE PARGA PAXI PELEKAS
+..VFR-LGKV .FF ALISTRATI AMALA ASKOS DRAMA FANARI IASMOS IDILO KAVALA KERAMOTI KINIRA KOMOTINI LOUTRA PARANESTI PEREN PONTO PRINOS ROUPOL SMARION SOSUS STRYMON XANTHI XERIS
+..VFR-LGMT .FF MOLIVOS SIKAMIA PALIOS AGIA KALONI GERA MIRSINIA PLOMARI MIMIS PANOS POLIS FOKAS
+..VFR-LGPA .FF ANTIPAROS BIBEX DIDIS EROTU ERAKIS FANOS KOTOMERI MAISTROS NAXOS
+..VFR-LGRP .FF AFANTOU ALIMIA ALFA BRAVO CHARLIE DRDS LINDOS MARITSA NISYROS NOVEMBER SESKLI TILOS WHISKY KHALKI
+..VFR-LGSK .FF CHRIS DRYLO IBIDI KOUKOUNARIES LEFKO PRASO AIOAN PELAS HSKOPELOS HALONISOS
+
+;*** Auto ***
+.autoproceed Proceed direct $1
+.autoclearedils Cleared ILS approach rwy $1, report established
+.autoclearedvisual Cleared visual approach rwy $1, report on final.
+.autoclimblevel Recleared FL$1
+.autoclimbaltitude Recleared altitude $1ft, QNH $altim($dep).
+.autodescendlevel Descend FL$1
+.autodescendaltitude Descend altitude $1ft, QNH $altim($arr).
+.autospeed Speed $1 KT indicated
+.automach Mach number $1
+.autonospeed Resume normal speed
+.autoturnleft Turn left heading $1
+.autoturnright Turn right heading $1
+.autocontact Contact $1 on frequency $2. Have a nice flight. Bye.
+.autosquawk Set SQ $1
+
+;*** EUR ***
+..ERST For further descend resume own navigation, switch to Unicom 122.800. Radar service terminated, Bye bye!
+..NOT $radioname provides ATC only above FL245. Monitor UNICOM 122.800. 
+..EDESC Descend FL250, report passing FL260.
