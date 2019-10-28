@@ -18,6 +18,7 @@
 ..RWHEAD Continue RWY heading, climb to $1
 
 ;*** Taxi ***
+..TAXI Taxi holding point rwy $deprwy, report ready for departure, QNH $altim($dep).
 ..TAXIHP Taxi holding point $1, rwy $deprwy via $2, report ready for departure, QNH $altim($dep)..
 ..TAXICR Taxi holding point $1 rwy $deprwy via $2, cross rwy $3, report ready for departure, QNH $altim($dep)..
 ..LW Line up and wait rwy $deprwy.
