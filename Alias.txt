@@ -1,7 +1,8 @@
 ;*** Clearance ***
 ..PDC This is your predepature clearance (PDC) simulating ACARS datalink: CLD $1z $dep PDC 001/$aircraft CLRD TO $arr OFF $deprwy VIA $sid/SQUAWK $squawk ADT MDI/confirm clearance and report ready for startup on $com.
 ..CLR Cleared to $arr as filed, $sid dep, rwy $deprwy, climb $alt, SQ $squawk.
-..CLRC Readback correct, advise ready for pushback and startup.
+..CLROK Readback correct, push and start approved, next call when ready for taxi.
+..CLROK1 Readback correct, advise ready for pushback and startup.
 ..FPC Your FP closed $time, thank you for flying to $arr, see you soon Captain.
 ..CLRLATER Clearance during taxi, advise for start-up.
 
