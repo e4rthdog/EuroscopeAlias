@@ -70,6 +70,7 @@
 ..CLIMB Climb FL $1.
 ..STAR Cleared $star arrival, $1 approach rwy $arrrwy, descend according the procedure, local QNH $altim($arr).
 ..EXSTAR Expect $star arrival, $1 approach rwy $arrrwy, report ready for descend.
+..EXVEC Expect vectors for $1 approach rwy $arrrwy.
 
 ;*** Wait ***
 ..WC .wait CLRC
