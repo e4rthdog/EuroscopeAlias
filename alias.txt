@@ -120,7 +120,7 @@
 .autoproceed Proceed direct $1
 .autoclearedils Cleared ILS approach rwy $1, report established
 .autoclearedvisual Cleared visual approach rwy $1, report on final.
-.autoclimblevel Recleared FL$1
+.autoclimblevel Climb FL$1
 .autoclimbaltitude Recleared altitude $1ft, QNH $altim($dep).
 .autodescendlevel Descend FL$1
 .autodescendaltitude Descend altitude $1ft, QNH $altim($arr).
