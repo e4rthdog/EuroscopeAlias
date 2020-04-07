@@ -13,9 +13,9 @@
 ;*** Takeoff ***
 ..RD Advise ready for departure.
 ..TO Wind $winds, rwy $deprwy, cleared for takeoff.
-..RDC Radar Contact $calt.
-..RC Radar contact, $calt , continue as filed.
-..RWHEAD Continue RWY heading, climb to $1
+..RC Radar Contact $calt.
+..RDC Radar contact, $calt , continue as filed.
+..RWH Continue RWY heading, climb to $1
 
 ;*** Taxi ***
 ..TAXI Taxi holding point rwy $deprwy, report ready for departure, QNH $altim($dep).
