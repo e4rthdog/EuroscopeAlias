@@ -32,6 +32,11 @@
 ..VECTOR Vectors for $1, rwy $arrrwy.
 ..VECTORVIS Vectors for visual approach rwy $arrrwy.
 
+..FINAL Report final rwy $arrrwy.
+..BASE Report base rwy $arrrwy.
+..DOWN Report $1 downwind rwy $arrrwy.
+..EXTEND Extend downwind rwy $arrrwy.
+..CONT Continue approach.
 ..ILS Cleared ILS approach, rwy $arrrwy, report established.
 ..LOC Cleared for the localiser, rwy $arrrwy, report established.
 ..LCTR Cleared LCTR approach, rwy $arrrwy, report rwy in sight.
@@ -44,7 +49,10 @@
 ..LAND1 Wind $winds, rwy $arrrwy, cleared to land, report rwy vacated.
 ..TOUCH Cleared touch and go.
 ..LOW Cleared low pass.
-..GOA Go Around.
+..GO Go Around.
+..GO1 Go Around, runway heading.
+..GO2 Go around, follow missed approach procedure as published.
+..GO3 Go around, follow missed approach procedure as published.
 
 ..SPEEDR Report indicated air speed.
 ..FYGE No further ATC to Hand you Over. Radar service terminated, switch to Unicom 122.800, Bye bye.
