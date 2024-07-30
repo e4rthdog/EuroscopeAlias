@@ -23,8 +23,11 @@
 ..LEAVEHDG Leave $1 heading $2.
 ..RESUME Resume own navigation $1
 
+..HOLD Hold as published over $1.
+..HOLDV Hold visual over $1.
 ..EXSTAR Expect $star arrival, rwy $arrrwy, report ready for descend.
 ..STAR Cleared $star arrival.
+..STARD Cleared $star arrival.Descend according to the procedure.
 ..STARD Cleared $star arrival.Descent via arrival profile, $1
 
 ..ORBITL Orbit left.
