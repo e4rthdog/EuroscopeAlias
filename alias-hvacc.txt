@@ -12,7 +12,8 @@
 ;                                                                                                                         ;
 ;=========================================================================================================================;
 ;                                                                                                                         ;
-;  ALL RIGHTS RESERVED © AeroNav Association. NAV-DATA © AEROSOFT. FILES MUST NOT BE DISTRIBUTED TO NON-VATSIM MEMBERS!   ;
+;  ALL RIGHTS RESERVED   AeroNav Association. NAV-DATA   NAVIGRAPH.                                                       ;
+;  FILES MUST NOT BE DISTRIBUTED OUTSIDE OF AERONAV SERVICES!                                                             ;
 ;                                                                                                                         ;
 ;=========================================================================================================================;
 ;  The Global Nav Generator (GNG) and all it sub-modules where created by the AeroNav Association.                        ;
@@ -23,15 +24,19 @@
 ;  only. The data must not be copied, photocopied, translated, reverse engineered, decompiled or reduced to any           ;
 ;  electronic medium or machine legible form, neither completely nor in part.                                             ;
 ;=========================================================================================================================;
-;  AIRAC 2010/1  ++  Valid period: 10/SEP/2020 - 07/OCT/2020  ++  File-Publisher: Hellenic vACC - LGGG                    ;
+;  AIRAC 2511/1  ++  File-Publisher: Hellenic vACC - LGGG                                                                 ;
 ;=========================================================================================================================;
 ;*** Approach ***
-..ILS Cleared ILS approach, rwy $arrrwy, report established.
-..LOC Cleared for the localiser, rwy $arrrwy, report established.
-..VOR Cleared VOR/DME approach, rwy $arrrwy, report rwy in sight.
-..VIS Cleared visual approach, rwy $arrrwy, report on final.
-..EXSTAR Expect $star arrival, $1 approach rwy $arrrwy, report ready for descend.
-..STAR Cleared $star arrival, $1 approach rwy $arrrwy, descend according the profile, local QNH $altim($arr).
+.ILS Cleared ILS approach, rwy $arrrwy, report established.
+.LOC Cleared for the localiser, rwy $arrrwy, report established.
+.LCTR Cleared LCTR approach, rwy $arrrwy, report rwy in sight.
+.VOR Cleared VOR/DME approach, rwy $arrrwy, report rwy in sight.
+.RNAV Cleared RNAV approach, rwy $arrrwy, report rwy in sight.
+.RNP Cleared RNP approach, rwy $arrrwy, report rwy in sight.
+.ADVV Advice able for visual approach, rwy $arrrwy.
+.VIS Cleared visual approach, rwy $arrrwy, report on final.
+.EXSTAR Expect $star arrival, rwy $arrrwy, report ready for descend.
+.STAR Cleared $star arrival.
 
 ;*** Auto ***
 .autoproceed Proceed direct $1
@@ -46,110 +51,108 @@
 .autonospeed Resume normal speed
 .autoturnleft Turn left heading $1
 .autoturnright Turn right heading $1
-.autocontact Contact $1 on frequency $2. Have a nice flight. Bye.
+.autocontact Contact $1 on frequency $2, bye bye!
 .autosquawk Set SQ $1
 
 ;*** Clearance ***
-..CLR Cleared to $arr as filed, $sid dep, rwy $deprwy, initial climb $alt, SQ $squawk.
-..CLRC Readback correct.
-..FPC Your FP closed $time, thank you for flying to $arr.
-..CLRLATER Clearance during taxi, advise for start-up.
-..CLROLD Cleared to $arr as filed, after departure rwy $deprwy, maintain runway heading and expect radar vectors to $1, initial climb $alt, SQ $squawk.
-..PDC This is your predepature clearance (PDC) simulating ACARS datalink: CLD $1z $dep PDC 001/$aircraft CLRD TO $arr OFF $deprwy VIA $sid/SQUAWK $squawk ADT MDI/confirm clearance and report ready for startup on $com.
-
-;*** EUR ***
-..ERST For further descend resume own navigation, switch to Unicom 122.800. Radar service terminated, Bye bye!
-..NOT $radioname provides ATC only above FL245. Monitor UNICOM 122.800. 
-..EDESC Descend FL250, report passing FL260.
+.VISDEP Advise able to accept visual departure to $1.
+.CLR Cleared to $arr, $sid dep, rwy $deprwy, climb via SID $alt, SQ $squawk.
+.CLRVIS Cleared to $arr, rwy $deprwy, after departure turn $1 VMC to $2, initial climb $alt, SQ $squawk.
+.CLRC Readback correct.
+.CLRLATER Clearance during taxi, advise for start-up.
+.PDC This is your predepature clearance (PDC) simulating ACARS datalink: CLD $1z $dep PDC 001/$aircraft CLRD TO $arr OFF $deprwy VIA $sid/SQUAWK $squawk ADT MDI/confirm clearance and report ready for startup on $com.
+.NOFP I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and that the callsign in your flight plan and the one you are connected with are the same. If you have just flown inbound already, please also reconnect to the network to ensure that you appear on the controllers' screens
+.TOBT Please set your TOBT at https://vats.im/gr/acdm
+.TSAT You can find your current TSAT at https://vats.im/gr/acdm
 
 ;*** Handoff ***
-..HANDOFF Contact $radioname($1) on freq $freq($1).
-..RST No further ATC to Hand you Over. Radar service terminated, switch to Unicom 122.800, Bye bye.
-..RSC $radioname is now closing. Radar service terminated, switch to Unicom 122.800, Bye bye!
+.HANDOFF Contact $radioname($1) on freq $freq($1).
+.C Contact $1, bye!
+.U Monitor Advisory 122.800, bye bye!
+.A Monitor Advisory 122.800, bye bye!
+.833 You have been transferred to an 8.33kHz channel. If your simulator and/or aircraft does not support 8.33kHz channel spacing, you have to use ".com1 " in your pilot client to tune to the correct frequency. You can learn more about the introduction of 8.33kHz channels to VATSIM at https://vats.im/833.
+.freqhelp Not all frequencies in use will show in the controller list of your pilot client, especially if a controller is using multiple frequencies. To ensure you can properly communicate with the correct controller, please always switch to the frequency given by ATC during the handoff.
 
 ;*** Landing ***
-..LAND Wind $winds, rwy $arrrwy, cleared to land.
-..VAC Report rwy $arrrwy vacated.
+.LAND Wind $winds, rwy $arrrwy, cleared to land.
+.VAC Report rwy $arrrwy vacated.
 
 ;*** QuickVis ***
-..FIX-LGGG1 .FF BELIX LORNO RUTOM DINOB LATAN NOSTO TIGRA OLGAT PITAS NIKRO VJOSA TUMBO DIMIS PINDO BITLA BEKVA TALAS ERANA MAKED DISOR RUGAS EVIVI ATFIR NIKTI RODIP
-..FIX-LGGG2 .FF DIGTI GOLDO BELGI AMANI RIKSO VEXOL SITRU REDRA BANRO ROTAS PIROX SOTIV BENEM EVENO ALKIS TOSKA VANZA OTHON ANIDE KAVOS KUMBI ANTAR PAXIS TANSA METRU  ARLOS SALUN NEVIK DEMAG
-..FIX-LGAV .FF ASTOV NEMES RILIN AGAPU BISMO RIMAX PIKAD GERMI XORKI ROPOX DILOP OGSIL OMIRO TUREN NEVRA OLIDA VARIX SOREV BADEL PELAG VELOP
-..FIX-LGTS .FF LOPOS EDASI ALIKO ODIKO DIKNI ARNAS PEREN OSMOS LEKPO BEKVA TALAS ERANA MAKED DISOR RUGAS EVIVI NIKTI
-..FIX-LGIR .FF TIPUS OTREX BAVES EPALO NAVUS XAVIS LABUX AMAXI VEGES DELAV MOKIS GONSO NIBOX LAPSO DIRMI ALIKI
-..FIX-LGKR .FF OLGAT TIGRA NOSTO LATAN IDIMI RIPID MALED PARNA PARAX NIKRO PITAS BEDEX DIREX
-..FIX-LGRP .FF CODIC BANRO BENEM IRBAX LAKAD LOKNA NAVOK NILAS ORVIS PIROX ROXOL SOTIV VANES FOXLI
-..VOR-LGGG .FV KRK YNN TSL ALX LMO SKP ARA TRL ATV KEA MIL PLH SIT RDS MES
-..VOR-LGAV .FV ATV KEA DDM KRO MKN MIL
-..VOR-LGTS .FV TSL MKR SKP KAS KPL FSK
-..VOR-LGIR .FV IRA SIT PLH SUD
-..VOR-LGKR .FV GAR KRK YNN
-..VOR-LGRP .FV PAR RDS KOS
-..NDB-LGGG .FN KOR
-..NDB-LGAV .FN KOR EGN
-..NDB-LGTS .FN THS
-..NDB-LGIR .FN HER
-..APT-LGGG .FA LGAV LGTT LGKN LGEL LGMG LGHI LGMT LGLM LGAL LGKV LGTS LGKZ LGKA LGLR LGBL LGSK LGSY LGTG LGIO LGKR LGPZ LGAD LGRX LGKF LGTP LGKF LGKL LGKC LGML LGIR LGSA LGTL LGZA LGMK LGPA LGNX LGSR LGST LGKP LGRP LGKO LGPL LGLE LGSM LGIK LGKJ LGKS LGSO
-..APT-LGAV .FA LGAV LGMG LGEL LGTT LGKN LGSO
-..APT-LGTS .FA LGTS LGSD LGAX
-..APT-LGIR .FA LGIR LGTL LGST LGSA LGKS LGKP
-..APT-LGKR .FA LGKR
-..APT-LGRP .FA LGRP LGRD
-..VFR-LGAV1 .FF AFLEV APATR AYDRA AGEOR ATHOM AIGINA ASTROS AVLAKI DAPORI DAVRO EAIGI HELLINIKON HOLARGOS KASTELLA KAVOURI KORINTHOS LOFOS MAKROS MANDILOU MEGARA MEROUTHI
-..VFR-LGAV2 .FF NAFPLIO NANDR AKEA NSYRO PERATI POROS SSYRO SPETSAI STAVROS YDRA YIAROS SKITH KAFIREAS
-..VFR-LGTS .FF KITROS DELTA AGELO GOLF FALIA PIKRO KORA APOLO KATERO LAGADA PANORA VASILI GALA PLAYIA POSIDI LAMBI
-..VFR-LGIR .FF AMALI AVGO DIA GRISL HOSPITAL IERAPETRA KASTELI PAXIMADI PSISL SKALANI AAGIO AMYRO TIMBAKI
-..VFR-LGKO .FF KANDELUSA KEFALOS KOPAR NERA NISYROS PERGUSA POTHIA TELENDOS
-..VFR-LGKR .FF ANTENA AVLAKI.KR CASTRO GARDI IGOU KAVOS OTHONI PALE PARGA PAXI PELEKAS
-..VFR-LGKV .FF ALISTRATI AMALA ASKOS DRAMA FANARI IASMOS IDILO KAVALA KERAMOTI KINIRA KOMOTINI LOUTRA PARANESTI PEREN PONTO PRINOS ROUPOL SMARION SOSUS STRYMON XANTHI XERIS
-..VFR-LGMT .FF MOLIVOS SIKAMIA PALIOS AGIA KALONI GERA MIRSINIA PLOMARI MIMIS PANOS POLIS FOKAS
-..VFR-LGPA .FF ANTIPAROS BIBEX DIDIS EROTU ERAKIS FANOS KOTOMERI MAISTROS NAXOS
-..VFR-LGRP .FF AFANTOU ALIMIA ALFA BRAVO CHARLIE DELTA LINDOS MARITSA NISYROS NOVEMBER SESKLI TILOS WHISKY CHALKI
-..VFR-LGSK .FF CHRIS DRYLO IBIDI KOUKOUNARIES LEFKO PRASO AIOAN PELAS HSKOPELOS HALONISOS
-..VFR-LGMK .FF DIDIS DILOS DRAGO FTELIA KOUNOUPAS LETSO LIVADI MIKE NITSA ORNOS ORNOS OSCAR PIDAX RINIA TINOS VARIX
+.FIX-LGGG1 .FF BELIX LORNO RUTOM DINOB LATAN NOSTO TIGRA OLGAT PITAS NIKRO VJOSA TUMBO DIMIS PINDO BITLA BEKVA TALAS ERANA MAKED DISOR RUGAS EVIVI ATFIR NIKTI RODIP
+.FIX-LGGG2 .FF DIGTI GOLDO BELGI AMANI RIKSO VEXOL SITRU REDRA BANRO ROTAS PIROX SOTIV BENEM EVENO ALKIS TOSKA VANZA OTHON ANIDE KAVOS KUMBI ANTAR PAXIS TANSA METRU  ARLOS SALUN NEVIK DEMAG
+.FIX-LGAV .FF ASTOV NEMES RILIN AGAPU BISMO RIMAX PIKAD GERMI XORKI ROPOX DILOP OGSIL OMIRO TUREN NEVRA OLIDA VARIX SOREV BADEL PELAG VELOP
+.FIX-LGTS .FF LOPOS EDASI ALIKO ODIKO DIKNI ARNAS PEREN OSMOS LEKPO BEKVA TALAS ERANA MAKED DISOR RUGAS EVIVI NIKTI
+.FIX-LGIR .FF TIPUS OTREX BAVES EPALO NAVUS XAVIS LABUX AMAXI VEGES DELAV MOKIS GONSO NIBOX LAPSO DIRMI ALIKI
+.FIX-LGKR .FF OLGAT TIGRA NOSTO LATAN IDIMI RIPID MALED PARNA PARAX NIKRO PITAS BEDEX DIREX
+.FIX-LGRP .FF CODIC BANRO BENEM IRBAX LAKAD LOKNA NAVOK NILAS ORVIS PIROX ROXOL SOTIV VANES FOXLI
+.VOR-LGGG .FV KRK YNN TSL ALX LMO SKP ARA TRL ATV KEA MIL PLH SIT RDS MES
+.VOR-LGAV .FV ATV KEA DDM KRO MKN MIL
+.VOR-LGTS .FV TSL MKR SKP KAS KPL FSK
+.VOR-LGIR .FV IRA SIT PLH SUD
+.VOR-LGKR .FV GAR KRK YNN
+.VOR-LGRP .FV PAR RDS KOS
+.NDB-LGGG .FN KOR
+.NDB-LGAV .FN KOR EGN
+.NDB-LGTS .FN THS
+.NDB-LGIR .FN HER
+.APT-LGGG .FA LGAV LGTT LGKN LGEL LGMG LGHI LGMT LGLM LGAL LGKV LGTS LGKZ LGKA LGLR LGBL LGSK LGSY LGTG LGIO LGKR LGPZ LGAD LGRX LGKF LGTP LGKF LGKL LGKC LGML LGIR LGSA LGTL LGTY LGZA LGMK LGPA LGNX LGSR LGST LGKP LGRP LGKO LGPL LGLE LGSM LGIK LGKJ LGKS LGSO
+.APT-LGAV .FA LGAV LGMG LGEL LGTT LGKN LGSO
+.APT-LGTS .FA LGTS LGSD LGAX
+.APT-LGIR .FA LGIR LGTL LGST LGSA LGKS LGKP
+.APT-LGKR .FA LGKR
+.APT-LGRP .FA LGRP LGRD
 
 ;*** Squawk ***
-..SQ	Set SQ $squawk
-..SQSB Set SQ mode S/B.
-..SQC Set SQ mode C.
+.SQ	Set SQ $squawk
+.SQSB Set SQ mode S/B.
+.SQC Set SQ mode C.
 
 ;*** Startup ***
-..PUSH Local QNH $altim($dep), startup and pushback approved facing $1.
-..START Local QNH $altim($dep), Startup approved.
+.PUSH Startup and pushback approved facing $1.
+.START Startup approved.
+.SUN Startup approved, hold position, for pushback contact Venizelos Ground on 121.755.
+.SUS Startup approved, hold position, for pushback contact Venizelos Ground on 121.955.
 
 ;*** Takeoff ***
-..RD Advise ready for departure.
-..TAKEOFF Wind $winds, rwy $deprwy, cleared for takeoff.
-..RWHEAD Continue RWY heading, climb to $1
+.RD Advise ready for departure.
+.TAKEOFF Wind $winds, rwy $deprwy, cleared for takeoff.
+.RWHEAD After departure maintain RWY heading, wind $winds, rwy $deprwy, cleared for takeoff.
 
 ;*** Taxi ***
-..TAXIHOLD Taxi holding point rwy $deprwy via $1.
-..TAXICROSS Taxi holding point rwy $deprwy via $1, cross rwy $2.
-..LW Line up and wait rwy $deprwy.
-..TAXIAPRON Taxi via $1 to the apron.
-..TAXISTAND Taxi via $1 to stand $2.
-..TAXIGATE Taxi via $1 to gate $2.
+.TAXIHOLD Taxi holding point rwy $deprwy via $1.
+.TAXICROSS Taxi holding point rwy $deprwy via $1, cross rwy $2.
+.LW Line up and wait rwy $deprwy.
+.TAXIAPRON Taxi via $1 to the apron.
+.TAXISTAND Taxi via $1 to stand $2.
+.TAXIGATE Taxi via $1 to gate $2.
 
 ;*** Various ***
-..VOICE Do you copy on Voice?
-..AI $metar($arr)
-..DI $metar($dep)
-..OFF To all stations, $radioname is now closing. Switch to UNICOM 122.800. Bye everyone!
-..OFF5 To all stations, $radioname is closing in 5 minutes!
-..WA $metar($arr), Runway $1 in use
+.VOICE Do you copy on Voice?
+.AI $metar($arr)
+.DI $metar($dep)
+.OFF All stations, $radioname is now closing. Monitor Advisory 122.800, bye bye!
+.OFFC All stations, $radioname is now closing. Contact $1, bye bye!
+.OFF5 All stations, $radioname is closing in 5 minutes!
+.WA $metar($arr), Runway $1 in use
+.RFL Report final requested level.
 
 ;*** Vectors ***
-..LEFT Turn Left Hdg $1.
-..RIGHT Turn Right Hdg $1.
-..DESC Descend $1 , QNH $altim($arr).
-..CLIMB Climb FL $1.
-..ID Identified passing $calt. 
-..RC Radar contact, $calt.
+.LEFT Turn Left Hdg $1.
+.RIGHT Turn Right Hdg $1.
+.DESC Descend $1 , QNH $altim($arr).
+.CLIMB Climb FL $1.
+.ID Identified passing $calt. 
+.RC Radar contact, $calt.
 
 ;*** Wait ***
-..WC .wait CLRC
-..WS .wait STUP
-..WP .wait P&ST
-..WT .wait TAXI
-..WD .wait DEPA
+.WC .wait CLRC
+.WS .wait STUP
+.WP .wait P&ST
+.WT .wait TAXI
+.WD .wait DEPA
+
+;*** Wallop ***
+.wallcoc .wallop $aircraft unable to comply with ATC instructions (CoC B8).
+.wallnoco .wallop $aircraft not in contact with anyone and ignoring contact me messages (CoC B3).
+.wallemer .wallop $aircraft not cancelling their emergency despite having been instructed to do so (CoC B6).
 
