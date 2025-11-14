@@ -2,6 +2,9 @@
 
 Contains instructions for custom actions after full HvACC sector file update for LGGG / LCCC.
 
+## Aliases
+
+Add the `alias.txt` file contents on top of the `alias.txt` file that came with the full package.
 
 ## Symbology
 
