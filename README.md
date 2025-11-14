@@ -24,3 +24,6 @@ ASRFastKeys	5	\LGGG\ASR\Radar Service ASR\LGGG_APP.asr
 ASRFastKeys	6	\LGGG\ASR\Radar Service ASR\LGGG_CTR.asr
 ```
 
+### LCCC
+
+LCCC profile already has the ASRs assigned to the General Settings
