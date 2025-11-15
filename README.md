@@ -53,3 +53,6 @@ LastSession	atis3	ATIS on 136.125 - Charts on briefing.hvacc.org - Coverage at v
 LastSession	atis4	Feedback on vats.im/gr/atcfb
 ```
 
+## Hoppie
+
+Add HOPPIE code to `TopSkyCPDLChoppiecode.txt` file
