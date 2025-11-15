@@ -10,7 +10,7 @@ Add the `alias.txt` file contents on top of the `alias.txt` file that came with 
 
 <img width="356" height="296" alt="image" src="https://github.com/user-attachments/assets/2c03c870-b691-42d7-9776-f4b88ab0a2ab" />
 
-**Change to 350 only for APP/CTR ASRs **
+**Change to 350 only for APP/CTR ASRs**
 
 ## Symbology Settings
 
