@@ -6,13 +6,18 @@ Contains instructions for custom actions after full HvACC sector file update for
 
 Add the `alias.txt` file contents on top of the `alias.txt` file that came with the full package.
 
-## Symbology
+## Display Settings
+
+<img width="356" height="296" alt="image" src="https://github.com/user-attachments/assets/2c03c870-b691-42d7-9776-f4b88ab0a2ab" />
+
+## Symbology Settings
 
 Symbology text file is included in the repo.
 
 Below settings are saved in the General settings file. Change the settings manually from their default values.
 
-<img width="730" height="171" alt="image" src="https://github.com/user-attachments/assets/417367f5-6fec-4856-a717-ab5a296fbaf5" />
+<img width="548" height="174" alt="image" src="https://github.com/user-attachments/assets/011f374c-feb4-4c44-87ca-67f7417d6c5e" />
+
 
 ## Profile file - Fast Keys
 
