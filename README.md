@@ -10,6 +10,8 @@ Add the `alias.txt` file contents on top of the `alias.txt` file that came with 
 
 <img width="356" height="296" alt="image" src="https://github.com/user-attachments/assets/2c03c870-b691-42d7-9776-f4b88ab0a2ab" />
 
+**Change to 350 only for APP/CTR ASRs **
+
 ## Symbology Settings
 
 Symbology text file is included in the repo.
@@ -26,11 +28,11 @@ Below settings are saved in the General settings file. Change the settings manua
 Be sure to replace the existing lines
 
 ```
-ASRFastKeys	1	\LGGG\ASR\Radar Service ASR\LGAV_GND_NEW.asr
-ASRFastKeys	3	\LGGG\ASR\Radar Service ASR\LGAV_APP.asr
-ASRFastKeys	4	\LGGG\ASR\Radar Service ASR\LGGG_GND.asr
-ASRFastKeys	5	\LGGG\ASR\Radar Service ASR\LGGG_APP.asr
-ASRFastKeys	6	\LGGG\ASR\Radar Service ASR\LGGG_CTR.asr
+ASRFastKeys	1	LGGG\ASR\Radar Service ASR\LGAV_GND_NEW.asr
+ASRFastKeys	3	LGGG\ASR\Radar Service ASR\LGAV_APP.asr
+ASRFastKeys	4	LGGG\ASR\Radar Service ASR\LGGG_GND.asr
+ASRFastKeys	5	LGGG\ASR\Radar Service ASR\LGGG_APP.asr
+ASRFastKeys	6	LGGG\ASR\Radar Service ASR\LGGG_CTR.asr
 ```
 
 ```
