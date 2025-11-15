@@ -44,8 +44,8 @@ LastSession	proxyserver	localhost
 LastSession	simdatapublish	0
 LastSession	callsign	LGAV_W_APP
 LastSession	realname	Elias Stassinos
-LastSession	certificate	1041728
-LastSession	password	r8DW5lk4
+LastSession	certificate	xxxxxx
+LastSession	password	xxxxxx
 LastSession	server	AUTOMATIC
 LastSession	atis2	Athinai Arrival
 LastSession	atis3	ATIS on 136.125 - Charts on briefing.hvacc.org - Coverage at vats.im/gr/sectormap
