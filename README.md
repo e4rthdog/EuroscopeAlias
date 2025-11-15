@@ -27,7 +27,6 @@ Be sure to replace the existing lines
 
 ```
 ASRFastKeys	1	\LGGG\ASR\Radar Service ASR\LGAV_GND_NEW.asr
-ASRFastKeys	2	\LGGG\ASR\Radar Service ASR\LGAV_TWR.asr
 ASRFastKeys	3	\LGGG\ASR\Radar Service ASR\LGAV_APP.asr
 ASRFastKeys	4	\LGGG\ASR\Radar Service ASR\LGGG_GND.asr
 ASRFastKeys	5	\LGGG\ASR\Radar Service ASR\LGGG_APP.asr
