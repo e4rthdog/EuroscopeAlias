@@ -19,9 +19,11 @@ Below settings are saved in the General settings file. Change the settings manua
 <img width="548" height="174" alt="image" src="https://github.com/user-attachments/assets/011f374c-feb4-4c44-87ca-67f7417d6c5e" />
 
 
-## Profile file - Fast Keys
+## Profile file
 
-### Add this to the .prf file for LGGG
+### Add this to the .prf file for LGGG/LCCC
+
+Be sure to replace the existing lines
 
 ```
 ASRFastKeys	1	\LGGG\ASR\Radar Service ASR\LGAV_GND_NEW.asr
@@ -32,6 +34,21 @@ ASRFastKeys	5	\LGGG\ASR\Radar Service ASR\LGGG_APP.asr
 ASRFastKeys	6	\LGGG\ASR\Radar Service ASR\LGGG_CTR.asr
 ```
 
-### LCCC
+```
+LastSession	connecttype	0
+LastSession	facility	5
+LastSession	rating	4
+LastSession	tovatsim	1
+LastSession	range	150
+LastSession	proxyserver	localhost
+LastSession	simdatapublish	0
+LastSession	callsign	LGAV_W_APP
+LastSession	realname	Elias Stassinos
+LastSession	certificate	1041728
+LastSession	password	r8DW5lk4
+LastSession	server	AUTOMATIC
+LastSession	atis2	Athinai Arrival
+LastSession	atis3	ATIS on 136.125 - Charts on briefing.hvacc.org - Coverage at vats.im/gr/sectormap
+LastSession	atis4	Feedback on vats.im/gr/atcfb
+```
 
-LCCC profile already has the ASRs assigned to the General Settings
