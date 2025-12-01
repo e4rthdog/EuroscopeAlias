@@ -24,7 +24,7 @@
 ;  only. The data must not be copied, photocopied, translated, reverse engineered, decompiled or reduced to any           ;
 ;  electronic medium or machine legible form, neither completely nor in part.                                             ;
 ;=========================================================================================================================;
-;  AIRAC 2511/1  ++  File-Publisher: vACC Cyprus - LCCC                                                                   ;
+;  AIRAC 2512/1  ++  File-Publisher: vACC Cyprus - LCCC                                                                   ;
 ;=========================================================================================================================;
 ;*** Approach ***
 .ILS Cleared ILS approach, rwy $arrrwy, report established.
@@ -76,7 +76,7 @@
 .VAC Report rwy $arrrwy vacated.
 
 ;*** QuickVis ***
-.FIX-LCCC .ff EVENO ALKIS TOSKA VANZA OTHON ANIDE KEREN ESERI KONFO DAFNA KAVOS RASDA LAKTO PASOS SUVAS SOLIN MERVA TAMMI DAVAR ELIKA KUKLA BALMA NIKAS VESAR DOREN TOMBI
+.FIX-LCCC .ff EVENO LUTIG ALKIS TOSKA VANZA OTHON ANIDE KEREN ESERI KONFO DAFNA KAVOS RASDA LAKTO PASOS SUVAS SOLIN MERVA TAMMI DAVAR ELIKA KUKLA BALMA NIKAS VESAR DOREN TOMBI
 .FIX-LCLK .ff BONEK DAROS SOBOS RUDER LUBES RUBIK KOBER DIPOS NORDI BETID LOSOS EMEDA BOSIS REXAL EMILI
 .FIX-LCPH .ff TOBAL GENOS LUBES DIPOS RUBIK NORDI LOSOS
 .VOR-LCCC .fv PHA LCK ECN GKE
