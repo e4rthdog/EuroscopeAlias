@@ -24,7 +24,7 @@
 ;  only. The data must not be copied, photocopied, translated, reverse engineered, decompiled or reduced to any           ;
 ;  electronic medium or machine legible form, neither completely nor in part.                                             ;
 ;=========================================================================================================================;
-;  AIRAC 2511/1  ++  File-Publisher: Hellenic vACC - LGGG                                                                 ;
+;  AIRAC 2512/1  ++  File-Publisher: Hellenic vACC - LGGG                                                                 ;
 ;=========================================================================================================================;
 ;*** Approach ***
 .ILS Cleared ILS approach, rwy $arrrwy, report established.
@@ -79,7 +79,7 @@
 
 ;*** QuickVis ***
 .FIX-LGGG1 .FF BELIX LORNO RUTOM DINOB LATAN NOSTO TIGRA OLGAT PITAS NIKRO VJOSA TUMBO DIMIS PINDO BITLA BEKVA TALAS ERANA MAKED DISOR RUGAS EVIVI ATFIR NIKTI RODIP
-.FIX-LGGG2 .FF DIGTI GOLDO BELGI AMANI RIKSO VEXOL SITRU REDRA BANRO ROTAS PIROX SOTIV BENEM EVENO ALKIS TOSKA VANZA OTHON ANIDE KAVOS KUMBI ANTAR PAXIS TANSA METRU  ARLOS SALUN NEVIK DEMAG
+.FIX-LGGG2 .FF DIGTI GOLDO BELGI AMANI RIKSO VEXOL SITRU REDRA BANRO ROTAS PIROX SOTIV BENEM EVENO LUTIG ALKIS TOSKA VANZA OTHON ANIDE KAVOS KUMBI ANTAR PAXIS TANSA METRU  ARLOS SALUN NEVIK DEMAG
 .FIX-LGAV .FF ASTOV NEMES RILIN AGAPU BISMO RIMAX PIKAD GERMI XORKI ROPOX DILOP OGSIL OMIRO TUREN NEVRA OLIDA VARIX SOREV BADEL PELAG VELOP
 .FIX-LGTS .FF LOPOS EDASI ALIKO ODIKO DIKNI ARNAS PEREN OSMOS LEKPO BEKVA TALAS ERANA MAKED DISOR RUGAS EVIVI NIKTI
 .FIX-LGIR .FF TIPUS OTREX BAVES EPALO NAVUS XAVIS LABUX AMAXI VEGES DELAV MOKIS GONSO NIBOX LAPSO DIRMI ALIKI
