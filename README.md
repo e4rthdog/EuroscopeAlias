@@ -34,6 +34,9 @@ ASRFastKeys	4	LGGG\ASR\Radar Service ASR\LGGG_GND.asr
 ASRFastKeys	5	LGGG\ASR\Radar Service ASR\LGGG_APP.asr
 ASRFastKeys	6	LGGG\ASR\Radar Service ASR\LGGG_CTR.asr
 ```
+The fast keys should appear like this , in the settings:
+<img width="746" height="317" alt="image" src="https://github.com/user-attachments/assets/233cbedf-1d22-4720-b2af-257741bc23aa" />
+
 
 ```
 LastSession	connecttype	0
