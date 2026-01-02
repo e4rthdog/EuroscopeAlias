@@ -58,10 +58,11 @@
 ..GO3 Go around, follow missed approach procedure as published.
 
 ..SPEEDR Report indicated air speed.
-..FYGE No further ATC to Hand you Over. Radar service terminated, switch to Unicom 122.800, Bye bye.
-..FEYGO $radioname is now closing. Radar service terminated, switch to Unicom 122.800, Bye bye!
+..FYGE No further ATC to Hand you Over. Radar service terminated, monitor advisory freq. 122.800, Bye bye.
+..FEYGO $radioname is now closing. Radar service terminated, monitor advisory freq. 122.800, Bye bye!
 ..CPDLC CPDLC active at $1
 ..PDC PDC active at $1
 ..FPC Your FP closed $time, thank you for flying to $arr, see you soon Captain.
 ..VOICE Do you copy on Voice?
 ;==============
+
