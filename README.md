@@ -20,6 +20,14 @@ Below settings are saved in the General settings file. Change the settings manua
 
 <img width="548" height="174" alt="image" src="https://github.com/user-attachments/assets/011f374c-feb4-4c44-87ca-67f7417d6c5e" />
 
+If you need to change only the aircraft symbols, replace Symbols 8 and 9 with these:
+
+```
+SYMBOL:8
+SYMBOLITEM:FILLARC 0 0 4 0 360
+SYMBOL:9
+SYMBOLITEM:ARC 0 0 4 0 360
+```
 
 ## Profile file
 
@@ -29,14 +37,14 @@ Be sure to replace the existing lines
 
 ```
 ASRFastKeys	1	LGGG\ASR\Radar Service ASR\LGAV_GND_NEW.asr
-ASRFastKeys	3	LGGG\ASR\Radar Service ASR\LGAV_APP.asr
-ASRFastKeys	4	LGGG\ASR\Radar Service ASR\LGGG_GND.asr
-ASRFastKeys	5	LGGG\ASR\Radar Service ASR\LGGG_APP.asr
-ASRFastKeys	6	LGGG\ASR\Radar Service ASR\LGGG_CTR.asr
+ASRFastKeys	2	LGGG\ASR\Radar Service ASR\LGAV_APP.asr
+ASRFastKeys	3	LGGG\ASR\Radar Service ASR\LGGG_GND.asr
+ASRFastKeys	4	LGGG\ASR\Radar Service ASR\LGGG_APP.asr
+ASRFastKeys	5	LGGG\ASR\Radar Service ASR\LGGG_CTR.asr
 ```
+
 The fast keys should appear like this , in the settings:
 <img width="746" height="317" alt="image" src="https://github.com/user-attachments/assets/233cbedf-1d22-4720-b2af-257741bc23aa" />
-
 
 ```
 LastSession	connecttype	0
