@@ -42,6 +42,11 @@ ASRFastKeys	3	LGGG\ASR\Radar Service ASR\LGGG_GND.asr
 ASRFastKeys	4	LGGG\ASR\Radar Service ASR\LGGG_APP.asr
 ASRFastKeys	5	LGGG\ASR\Radar Service ASR\LGGG_CTR.asr
 ```
+### Sector file name
+
+If you dont overwrite the profile files, change the name of the sector file to include the new filename.
+
+<img width="718" height="63" alt="image" src="https://github.com/user-attachments/assets/8b742f34-6b57-4872-bfb6-137b610f50b7" />
 
 The fast keys should appear like this , in the settings:
 <img width="746" height="317" alt="image" src="https://github.com/user-attachments/assets/233cbedf-1d22-4720-b2af-257741bc23aa" />
