@@ -64,5 +64,7 @@
 ..PDC PDC active at $1
 ..FPC Your FP closed $time, thank you for flying to $arr, see you soon Captain.
 ..VOICE Do you copy on Voice?
+
+..FIX-LGSA .FF SUD PLH 70VOR BAVES BEBUS LEVKO MANOK OTREX RUSOS SOKRI TIPUS XANAD
 ;==============
 
