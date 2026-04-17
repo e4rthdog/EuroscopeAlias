@@ -18,7 +18,7 @@ Symbology text file is included in the repo.
 
 Below settings are saved in the General settings file. Change the settings manually from their default values.
 
-<img width="548" height="174" alt="image" src="https://github.com/user-attachments/assets/011f374c-feb4-4c44-87ca-67f7417d6c5e" />
+<img width="728" height="210" alt="image" src="https://github.com/user-attachments/assets/93525284-765d-4dc1-8fe5-a6e7d41b8451" />
 
 If you need to change only the aircraft symbols, replace Symbols 8 and 9 with these:
 
