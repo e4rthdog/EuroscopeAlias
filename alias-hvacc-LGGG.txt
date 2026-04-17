@@ -24,7 +24,7 @@
 ;  only. The data must not be copied, photocopied, translated, reverse engineered, decompiled or reduced to any           ;
 ;  electronic medium or machine legible form, neither completely nor in part.                                             ;
 ;=========================================================================================================================;
-;  AIRAC 2512/1  ++  File-Publisher: Hellenic vACC - LGGG                                                                 ;
+;  AIRAC 2603/1  ++  File-Publisher: Hellenic vACC - LGGG                                                                 ;
 ;=========================================================================================================================;
 ;*** Approach ***
 .ILS Cleared ILS approach, rwy $arrrwy, report established.
